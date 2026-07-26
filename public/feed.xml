@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>My Daily Newsletter Podcast</title>
+    <link>https://cjding.github.io/daily-newsletter-podcast</link>
+    <description>A private daily briefing from my newsletters.</description>
+    <language>en</language>
+    <item>
+      <title>Daily Briefing — July 26, 2026</title>
+      <description>Welcome back to your private daily news briefing. Here's what’s happening today across technology, AI, global and US politics, geopolitics, economics, investing, leadership, writing, and public speaking.
+
+Let’s begin with the opening headlines.
+
+Anthropic's first technical product manager, Dianne Penn, shares insights on how the AI startup evolved from a small team of five engineers in 2023 to becoming the fastest-growing company in history. She discusses pioneering eval-driven development loops</description>
+      <guid>https://cjding.github.io/daily-newsletter-podcast/episodes/2026-07-26.mp3</guid>
+      <pubDate>Sun, 26 Jul 2026 12:58:39 +0000</pubDate>
+      <enclosure url="https://cjding.github.io/daily-newsletter-podcast/episodes/2026-07-26.mp3" length="9925632" type="audio/mpeg" />
+    </item>
+  </channel>
+</rss>
