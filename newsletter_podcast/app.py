@@ -24,8 +24,8 @@ DAILY_SECTIONS = (
     "Daily finance and investment idea",
     "Closing recap",
 )
-MIN_SCRIPT_WORDS = 1_400
-MAX_SCRIPT_WORDS = 1_750
+MIN_SCRIPT_WORDS = 1_000
+MAX_SCRIPT_WORDS = 1_200
 
 
 class _TextExtractor(HTMLParser):
@@ -165,9 +165,10 @@ def make_script(client, source: str, config: Config) -> str:
     response = client.responses.create(
         model=config.summary_model,
         instructions=(
-            "You are the host of a private daily news podcast. Write between 1,400 and 1,750 words, "
-            "which targets a consistent 11–14 minute episode and keeps it under 15 minutes at a "
-            "measured speaking pace. "
+            "You are the host of a private daily news podcast. Write between 1,000 and 1,200 words, "
+"which targets a consistent 8–10 minute episode, stays below the speech API's 2,000-token "
+"input limit, and keeps the episode under 15 minutes at a "
+"measured speaking pace. "
             f"Create the briefing in {config.podcast_language}. Prioritize consequential news, merge duplicate "
             "stories, explicitly identify themes that recur across multiple newsletters, name the newsletter "
             "source, and distinguish facts from "
