@@ -1,0 +1,58 @@
+name: Daily newsletter podcast
+
+on:
+  schedule:
+    # 07:00 Asia/Seoul (KST is UTC+9 year-round)
+    - cron: "0 22 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-newsletter-podcast
+  cancel-in-progress: false
+
+jobs:
+  create-and-publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Create today's episode
+        env:
+          GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
+          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
+          GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PODCAST_BASE_URL: ${{ vars.PODCAST_BASE_URL }}
+          DELIVERY_EMAIL: ${{ vars.DELIVERY_EMAIL }}
+          GMAIL_LABEL: ${{ vars.GMAIL_LABEL || 'daily newsletter' }}
+          PROCESSED_LABEL: ${{ vars.PROCESSED_LABEL || 'podcast/processed' }}
+          INTEREST_PROFILE: ${{ vars.INTEREST_PROFILE || 'technology, global affairs, business, finance, and lifelong learning' }}
+        run: python -m newsletter_podcast
+      - name: Save feed and episodes
+        run: |
+          if [[ -n "$(git status --porcelain -- public/)" ]]; then
+            git config user.name github-actions[bot]
+            git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+            git add public/
+            git commit -m "Publish daily podcast episode"
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
