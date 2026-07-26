@@ -12,7 +12,7 @@ from xml.etree import ElementTree as ET
 
 GMAIL_SCOPES = [
     "https://www.googleapis.com/auth/gmail.modify",
-    "https://www.googleapis.com/auth/gmail.send",
+   
 ]
 
 DAILY_SECTIONS = (
