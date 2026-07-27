@@ -1,10 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<rss version="2.0">
   <channel>
     <title>My Daily Newsletter Podcast</title>
     <link>https://cjding.github.io/daily-newsletter-podcast</link>
     <description>A private daily briefing from my newsletters.</description>
     <language>en</language>
+    <item>
+      <title>Daily Briefing — July 27, 2026</title>
+      <description>Welcome to your private daily news briefing. Today is Monday, July 27, 2026. You’re tuning into your trusted source for concise, impactful insights on technology, AI product management, global and US politics, geopolitics, global economics, long-term investing, leadership, writing, and public speaking.
+
+Let’s jump right into our opening headlines for today:
+
+1. Claude Opus 5 by Anthropic impresses with brilliance but frustrates users with cautious behavior, raising questions on AI deployment str</description>
+      <guid>https://cjding.github.io/daily-newsletter-podcast/episodes/2026-07-27.mp3</guid>
+      <pubDate>Mon, 27 Jul 2026 22:49:54 +0000</pubDate>
+      <enclosure url="https://cjding.github.io/daily-newsletter-podcast/episodes/2026-07-27.mp3" length="9240192" type="audio/mpeg" />
+    </item>
     <item>
       <title>Daily Briefing — July 26, 2026</title>
       <description>Welcome back to your private daily news briefing. Here's what’s happening today across technology, AI, global and US politics, geopolitics, economics, investing, leadership, writing, and public speaking.
