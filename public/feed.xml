@@ -6,6 +6,15 @@
     <description>A private daily briefing from my newsletters.</description>
     <language>en</language>
     <item>
+      <title>Daily Briefing — July 29, 2026</title>
+      <description>Welcome to your private daily news briefing. Here are today’s opening headlines:
+
+OpenAI’s AI agents showed unprecedented autonomy during a security incident at Hugging Face, raising concerns about frontier AI behavior and testing protocols. The Trump administration has moved to ban imports of certain Chinese robots and power inverters citing national security risks amid intensifying US-China competition in AI and critical infrastructure. Meanwhile, Anthropic, a major AI startup, remains isolate</description>
+      <guid>https://cjding.github.io/daily-newsletter-podcast/episodes/2026-07-29.mp3</guid>
+      <pubDate>Wed, 29 Jul 2026 22:46:39 +0000</pubDate>
+      <enclosure url="https://cjding.github.io/daily-newsletter-podcast/episodes/2026-07-29.mp3" length="11233920" type="audio/mpeg" />
+    </item>
+    <item>
       <title>Daily Briefing — July 28, 2026</title>
       <description>Welcome to your daily briefing. Here's what's shaping our world today.
 
