@@ -6,6 +6,15 @@
     <description>A private daily briefing from my newsletters.</description>
     <language>en</language>
     <item>
+      <title>Daily Briefing — August 22, 2026</title>
+      <description>Welcome to your daily briefing. Here are today’s opening headlines:
+
+A major U.S. Supreme Court decision supports the Trump administration by allowing the controversial ballroom construction project to temporarily proceed. Meanwhile, Walmart is finally adopting tap-to-pay technologies including Apple Pay, after years of hesitation. In the AI and tech world, OpenAI is previewing new zero-retention data policies to enhance privacy, and CrowdStrike’s CTO is launching a $170 million venture fund foc</description>
+      <guid>https://cjding.github.io/daily-newsletter-podcast/episodes/2026-08-22.mp3</guid>
+      <pubDate>Sat, 22 Aug 2026 07:32:28 +0000</pubDate>
+      <enclosure url="https://cjding.github.io/daily-newsletter-podcast/episodes/2026-08-22.mp3" length="9803520" type="audio/mpeg" />
+    </item>
+    <item>
       <title>Daily Briefing — August 1, 2026</title>
       <description>Welcome to today’s private daily briefing—your concise, measured rundown of important news, insights, and ideas tailored for your interests in technology, AI product management, global and US politics, geopolitics, global economics, long-term investing, leadership, writing, and public speaking. We aim to keep your briefing between 8 and 10 minutes, under 15 minutes total, with clear separations among sections: opening headlines, key stories with themes and takeaways, why this matters to you, top</description>
       <guid>https://cjding.github.io/daily-newsletter-podcast/episodes/2026-08-01.mp3</guid>
