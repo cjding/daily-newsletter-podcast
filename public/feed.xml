@@ -6,6 +6,15 @@
     <description>A private daily briefing from my newsletters.</description>
     <language>en</language>
     <item>
+      <title>Daily Briefing — October 5, 2026</title>
+      <description>Welcome to your Private Daily News Podcast. Here are today’s opening headlines:
+
+Apple's CEO John Ternus is personally leading hardware and software design efforts at the company, focusing on restoring Apple's design studio prestige instead of appointing an external chief design officer. Neuralink has pre-trained its neural decoding AI models on over 50,000 hours of unlabeled brain data, enhancing their accuracy and longevity. NASA and China are competing to develop nuclear reactors capable of o</description>
+      <guid>https://cjding.github.io/daily-newsletter-podcast/episodes/2026-10-05.mp3</guid>
+      <pubDate>Mon, 05 Oct 2026 12:26:52 +0000</pubDate>
+      <enclosure url="https://cjding.github.io/daily-newsletter-podcast/episodes/2026-10-05.mp3" length="9565056" type="audio/mpeg" />
+    </item>
+    <item>
       <title>Daily Briefing — September 18, 2026</title>
       <description>Welcome to your private daily briefing, focusing on technology, AI product management, global and US politics, geopolitics, global economics, long-term investing, leadership, writing, and public speaking. Today, we unpack key developments in AI innovation, security, software industry trends, geopolitics, and product management strategies from newsletters and analyses gathered September 17 and 18, 2026.
 
